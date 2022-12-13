@@ -46,5 +46,27 @@ namespace geekStore
             cmd.ExecuteNonQuery();
             con.Close();
         }
+
+        public List<Venda> localiza (int id)
+        {
+            List<Venda> lo = new List<Venda>();
+            string sql = "SELECT v.Id, v.data_venda, c.nome, v.total FROM venda v join cliente c on c.Id = v.id_cliente WHERE v.situacao = 'Aberta' and v.Id = '" + id + "';\r\n";
+            con.Open();
+            SqlCommand cmd = new SqlCommand(sql, con);
+            SqlDataReader dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                Venda c = new Venda();
+                c.id = (int)dr["Id"];
+                c.data = (DateTime)dr["data_venda"];
+                c.cliente = dr["nome"].ToString();
+                c.total = (decimal)dr["total"];
+                lo.Add(c);
+            }
+            dr.Close();
+            con.Close();
+            return lo;
+
+        }
     }
 }

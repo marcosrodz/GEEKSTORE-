@@ -37,6 +37,7 @@
             this.txtId = new System.Windows.Forms.TextBox();
             this.btnLocaliza = new System.Windows.Forms.Button();
             this.btnNovoPedido = new System.Windows.Forms.Button();
+            this.btnMostraTudo = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVenda)).BeginInit();
             this.SuspendLayout();
             // 
@@ -89,7 +90,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(182, 153);
+            this.label1.Location = new System.Drawing.Point(182, 126);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(33, 20);
             this.label1.TabIndex = 51;
@@ -98,7 +99,7 @@
             // txtId
             // 
             this.txtId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtId.Location = new System.Drawing.Point(221, 150);
+            this.txtId.Location = new System.Drawing.Point(221, 123);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(100, 26);
             this.txtId.TabIndex = 52;
@@ -106,23 +107,35 @@
             // btnLocaliza
             // 
             this.btnLocaliza.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLocaliza.Location = new System.Drawing.Point(327, 150);
+            this.btnLocaliza.Location = new System.Drawing.Point(327, 123);
             this.btnLocaliza.Name = "btnLocaliza";
             this.btnLocaliza.Size = new System.Drawing.Size(96, 26);
             this.btnLocaliza.TabIndex = 53;
             this.btnLocaliza.Text = "Localizar";
             this.btnLocaliza.UseVisualStyleBackColor = true;
+            this.btnLocaliza.Click += new System.EventHandler(this.btnLocaliza_Click);
             // 
             // btnNovoPedido
             // 
             this.btnNovoPedido.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNovoPedido.Location = new System.Drawing.Point(231, 63);
+            this.btnNovoPedido.Location = new System.Drawing.Point(231, 42);
             this.btnNovoPedido.Name = "btnNovoPedido";
             this.btnNovoPedido.Size = new System.Drawing.Size(160, 50);
             this.btnNovoPedido.TabIndex = 55;
             this.btnNovoPedido.Text = "Novo Pedido";
             this.btnNovoPedido.UseVisualStyleBackColor = true;
             this.btnNovoPedido.Click += new System.EventHandler(this.btnNovoPedido_Click);
+            // 
+            // btnMostraTudo
+            // 
+            this.btnMostraTudo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMostraTudo.Location = new System.Drawing.Point(261, 170);
+            this.btnMostraTudo.Name = "btnMostraTudo";
+            this.btnMostraTudo.Size = new System.Drawing.Size(96, 26);
+            this.btnMostraTudo.TabIndex = 57;
+            this.btnMostraTudo.Text = "Mostrar Tudo";
+            this.btnMostraTudo.UseVisualStyleBackColor = true;
+            this.btnMostraTudo.Click += new System.EventHandler(this.btnMostraTudo_Click);
             // 
             // FrmVenda
             // 
@@ -132,6 +145,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(624, 681);
+            this.Controls.Add(this.btnMostraTudo);
             this.Controls.Add(this.btnNovoPedido);
             this.Controls.Add(this.btnLocaliza);
             this.Controls.Add(this.txtId);
@@ -163,5 +177,6 @@
         private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.Button btnLocaliza;
         private System.Windows.Forms.Button btnNovoPedido;
+        private System.Windows.Forms.Button btnMostraTudo;
     }
 }

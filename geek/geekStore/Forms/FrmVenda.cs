@@ -27,6 +27,8 @@ namespace geekStore
             List<Venda> vendas = venda.listavenda();
             dgvVenda.DataSource = vendas;
             btnConfirmaPagamento.Enabled = false;
+            btnMostraTudo.Enabled = false;
+
         }
 
         private void btnVoltar_Click(object sender, EventArgs e)
@@ -69,6 +71,25 @@ namespace geekStore
             {
                 MessageBox.Show(er.Message, "Erro!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void btnLocaliza_Click(object sender, EventArgs e)
+        {
+            int id = Convert.ToInt32(txtId.Text.Trim());
+            Venda venda = new Venda();
+            List<Venda> vendas = venda.localiza(id);
+            dgvVenda.DataSource = vendas;
+            btnConfirmaPagamento.Enabled = true;
+            btnMostraTudo.Enabled = true;
+        }
+
+        private void btnMostraTudo_Click(object sender, EventArgs e)
+        {
+            Venda venda = new Venda();
+            List<Venda> vendas = venda.listavenda();
+            dgvVenda.DataSource = vendas;
+            btnConfirmaPagamento.Enabled = false;
+            btnMostraTudo.Enabled = false;
         }
     }
 }

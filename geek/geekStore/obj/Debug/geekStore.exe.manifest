@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="geekStore.exe" size="11643864">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="geekStore.exe" size="11644888">
       <assemblyIdentity name="geekStore" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>dSLFa0N+CrxJickGAFm7vipCShyXPi6aPpp7N+KR4YI=</dsig:DigestValue>
+        <dsig:DigestValue>7kkb5nERpdj4iE2vX+8c9RbXN80DxDO6bk2xSkJQd3Y=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -59,7 +59,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>B+FF+aPzWofVmJN3vJUBn03tR0gY9AqbstislmoM750=</dsig:DigestValue>
+      <dsig:DigestValue>buK99EhWR2UpQD2PnkxksBhioEBMi67aEICXJG1pRw0=</dsig:DigestValue>
     </hash>
   </file>
   <file name="DbGeek_log.ldf" size="8388608" writeableType="applicationData">
@@ -68,7 +68,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>FK+LHLVqQWRHb4fAngZ3SK7tZwkP3UCHpHgqYW4Y2OM=</dsig:DigestValue>
+      <dsig:DigestValue>YJXthkHEzvdQ9iMJOMNyQWUTs7dG3KWZP4IuyGZ4Isk=</dsig:DigestValue>
     </hash>
   </file>
   <file name="geekStore.exe.config" size="189">
